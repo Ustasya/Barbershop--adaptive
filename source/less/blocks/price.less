@@ -1,0 +1,80 @@
+.price {
+  width: 100%;
+  font-size: 20px;
+}
+
+.price__number {
+  display: none;
+}
+
+.price__name {
+  display: block;
+}
+
+.price__service {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.price__name {
+  font-weight: 700;
+}
+
+.price__cost {
+  text-align: right;
+  vertical-align: top;
+}
+
+@media (min-width: @tablet-width) {
+
+.price {
+  border-collapse: collapse;
+  vertical-align: middle;
+}
+  .price__number,
+  .price__name,
+  .price__service {
+    display: table-cell;
+  }
+
+.price,
+& td,
+& tr {
+  border: 1px solid #505050;
+}
+
+.price td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.price__number {
+  padding-left: 32px;
+}
+
+.price__name,
+.price__service,
+.price__cost {
+  padding-left: 20px;
+}
+
+.price__cost {
+  text-align: left;
+}
+
+.price__service--bracket {
+  display: none;
+}
+}
+
+@media (min-width: @desktop-width) {
+
+  .price {
+    width: 65%;
+    margin-right: 60px;
+  }
+
+  .price td {
+    padding: 16px;
+  }
+}

@@ -1,0 +1,12 @@
+*.psd
+*.pdf
+barbershop-all/
+build/
+node_modules/
+Thumbs.db
+source/css/*.css
+npm-debug.*
+*.log
+*.ai
+.idea
+.DS_store

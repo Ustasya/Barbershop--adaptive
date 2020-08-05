@@ -1,0 +1,164 @@
+
+.form__text  {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 42px;
+}
+
+.form__text input,
+.form__text textarea {
+  width: 100%;
+  flex-grow: 1px;
+  outline: none;
+  border: 1px solid #e5ddd5;
+  padding-top: 17px;
+  padding-bottom: 20px;
+  padding-left: 19px;
+  box-sizing: border-box;
+  color: #000000;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: inherit;
+  margin-bottom: 6px;
+
+  &:hover{
+    border-color: #d2c4b6;
+  }
+
+  &:active,
+  &:focus  {
+    border-color: @brown;
+  }
+}
+
+.form__text input {
+  height: 50px;
+}
+
+.form__text-tel,
+.form__text-comments {
+  margin-top: 32px;
+}
+
+.form__fieldset {
+  border: none;
+}
+
+.form__subtitle {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.form__form .form__send {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  z-index: 100;
+  background-color: #816550;
+  border: none;
+
+  &:hover,
+  &:focus {
+  background-color: #6A4D38;
+  }
+
+  &:active {
+    background-color: #6A4D38;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:disabled {
+    background-color: #AEAEAE;
+  }
+
+}
+
+@media (min-width: @tablet-width) {
+
+
+
+  .form__text {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__text input {
+    height: 70px;
+    font-size: 24px;
+  }
+
+  .form__text .form__text-surname,
+  .form__text .form__text-name,
+  .form__text .form__text-patronymic {
+    width: 33.3%;
+    font-size: 24px;
+  }
+
+  .form__text-tel,
+  .form__text-email,
+  .form__text-comments {
+    width: 100%;
+    margin-top: 35px;
+  }
+
+.form__text .form__text-comments {
+    height: 210px;
+    font-size: 24px;
+  }
+
+.form__subtitle {
+    position: relative;
+    padding: 0 25px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    background-color: #f9f5f2;
+    z-index: 20;
+  }
+
+.form__fieldset {
+    position: relative;
+    &::before {
+      position: absolute;
+top: 17px;
+content: "";
+width: 100%;
+border-top: 1px solid #e5ddd5;
+z-index: 10;
+    }
+  }
+
+.form__send {
+    width: 100%;
+    background-color: #826550;
+    color: #ffffff;
+    height: 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+
+
+.form__text {
+  justify-content: space-between;
+}
+
+.form__text .form__text-surname,
+.form__text .form__text-name,
+.form__text .form__text-patronymic {
+    width: 31.3%;
+      margin-bottom: 35px;
+  }
+
+.form__text .form__text-tel,
+.form__text .form__text-email {
+  width: 48.5%;
+      margin-bottom: 30px;
+  }
+
+.form__fieldset {
+    margin-top: 60px;
+  }
+}

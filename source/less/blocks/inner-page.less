@@ -1,0 +1,120 @@
+.inner-page {
+  background-color: @bg-cream;
+  color: #000000;
+  position: relative;
+  padding-top: 33px;
+
+  &::after {
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 35px;
+  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(48%, transparent), color-stop(2%, @bg-darkgrey), color-stop(50%, @bg-cream)), -webkit-gradient(linear, right bottom, left top, color-stop(48%, transparent), color-stop(2%, @bg-darkgrey), color-stop(50%, @bg-cream));
+  background-image: linear-gradient(to top right, transparent 49%, @bg-darkgrey 1%, @bg-cream 50%), linear-gradient(to top left, transparent 49%, @bg-darkgrey 1%, @bg-cream 50%);
+  background-position: top left, top right;
+  background-repeat: no-repeat;
+  background-size: 50.1% 100%;
+  }
+
+  border: transparent;
+}
+
+.inner-page__wrap {
+  width: 87%;
+  margin: 0 auto;
+}
+
+.inner-page__title {
+      font-size: 30px;
+      text-transform: uppercase;
+      margin-bottom: 33px;
+      text-align: center;
+}
+
+.inner-page__link {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+
+  .inner-page__logo {
+    height: 200px;
+    position: relative;
+  }
+
+.inner-page {
+  position: relative;
+  padding-bottom: 40px;
+
+  &::before {
+  position: absolute;
+  top: -35px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 35px;
+  background-image: linear-gradient(to top right, @bg-cream 49%, @bg-darkgrey 1%, transparent 50%), linear-gradient(to top left, @bg-cream 49%, @bg-darkgrey 1%, transparent 50%);
+  background-position: top left, top right;
+  background-repeat: no-repeat;
+  background-size: 50.1% 100%;
+  z-index: 100;
+}
+
+&::after {
+  display: none;
+}
+}
+
+  .inner-page__title {
+  font-size: 40px;
+text-align: left;
+margin-bottom: 40px;
+padding-top: 10px;
+  }
+
+  .inner-page__header {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .inner-page__link {
+    display: block;
+    width: 160px;
+    height: 50px;
+    box-sizing: border-box;
+    line-height: 18px;
+    align-content: middle;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+
+  .inner-page__logo {
+      height: 400px;
+    }
+
+  .inner-page {
+
+    &::before {
+    position: absolute;
+    top: -68px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 68px;
+    background-image: linear-gradient(to top right, @bg-cream 50%, transparent 50%), linear-gradient(to top left, @bg-cream 50%, transparent 50%);
+    background-position: top left, top right;
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    z-index: 100;
+  }
+}
+
+}
