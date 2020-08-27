@@ -9,4 +9,4 @@
 - [X] Оптимизация: предзагрузка шрифтов, оптимизация графики;
 - [X] Кроссбраузерность: Chrome, Firefox, Opera, Safari, Edge и IE11
 
-Посмотреть сайт можно по [ссылке](https://ustasya.github.io/Barbershop--adaptive/ "Проект Барбершоп «Бородинский»")
+Посмотреть сайт можно по [ссылке](https://ustasya.github.io/Barbershop-adaptive-Build/ "Проект Барбершоп «Бородинский»")
